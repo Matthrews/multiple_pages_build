@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>
+    <%=title %>
+  </title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- css reset -->
+  <link rel="stylesheet" href="//web-data.zmlearn.com/doc/nHnmwugYMAWxoA1xcvS6rh/reset.css">
+  <!-- rem adapter -->
+  <script>(function (win, doc) { function change() { var cWidth = doc.documentElement.clientWidth > 500 ? 500 : doc.documentElement.clientWidth; doc.documentElement.style.fontSize = 16 * cWidth / 375 + 'px' } change(); win.addEventListener('resize', function () { change() }, false) })(window, document)</script>
+  <!-- zm monitor sdk -->
+  <script src="//statics-lib.zmlearn.com/zm-jssdk/stable/zm-jssdk.js"></script>
+  <!-- tk monitor lib -->
+  <script src="//web-data.zmlearn.com/config/cLzZtf9PCeYM8KcsoqNBnj/tkMonitor-0.0.1.min.js"></script>
+  <!-- monitor init -->
+  <script>
+    if (window.ZM_JSSDK && window.tkMonitor) {
+      window.ZM_JSSDK.setConfig({
+        environment: '<%%= process.env.environment %%>',
+        logLevel: 'error'
+      });
+      window.tkMonitor.init({
+        appId: '<%=appId %>',
+        page: '<%=name %>',
+      })
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

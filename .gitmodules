@@ -1,0 +1,3 @@
+[submodule "shared-powers"]
+	path = shared-powers
+	url = git@github.com:Matthrews/shared-powers.git
