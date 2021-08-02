@@ -8,6 +8,8 @@
 
 - 区分环境，指定应用`appId`打包
 
+- 打包分析
+
 - 代码规范严格管控：ESLint+StyleLint+CommitLint+Husky
 
 - 自带子模块`submodle`
