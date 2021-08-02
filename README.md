@@ -2,6 +2,16 @@
 
 多页面打包实践
 
+## 特性
+
+- 命令式快速添加模板页面
+
+- 区分环境，指定应用`appId`打包
+
+- 代码规范严格管控：ESLint+StyleLint+CommitLint+Husky
+
+- 自带子模块`submodle`
+
 ## 常用脚本
 
 _cd 只支持 npm,暂不支持 yarn，工程不维护 yarn.lock_
